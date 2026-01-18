@@ -13,7 +13,13 @@
 
 ## Usage
 
-1. Simply include the url of the style you'd like to use in the [include](include/) dir of this repo!
+### SCSS:
+1. Simply `@use "https://raw.githubusercontent.com/ninetailedtori/catppuccin-highlight/refs/heads/main/include/catppuccin.scss";` at the top of your code!
+
+### LESS Userstyle:
+1. `@import "https://userstyles.catppuccin.com/lib/lib.less";` at the beginning of your code!
+2. Remember to `#lib.css-variables()` at the start of your `#catppuccin` mixin!
+3. `@import "https://raw.githubusercontent.com/ninetailedtori/catppuccin-highlight/refs/heads/main/include/catppuccin.css"` just below the Catppuccin standard library!
 
 ## 💝 Thanks to
 
