@@ -1,0 +1,104 @@
+// ******************************************************************************
+// *                                                                            *
+// *                       Highlight SCSS-Theme Catppuccin                      *
+// *                                                                            *
+// ******************************************************************************
+// By Catppuccin Org, released into the public domain through MIT License.
+
+// This template covers all of Highlight syntax elements.
+// Remember to `@use catppuccin` or `@use <flavor>`. For more details, see:
+// https://github.com/catppuccin/palette/blob/main/docs/sass.md
+
+// ==============================================================================
+//                            Colors Scheme Definition
+// ==============================================================================
+
+$HL-CanvasBG: $mantle;
+$HL-Default: $text;
+
+$HL-Border: $overlay0;
+
+$HL-LineNum: $overlay1;
+
+$HL-Number: $peach;
+$HL-Escape: $pink;
+$HL-Interpolation: $blue;
+$HL-String: $green;
+$HL-PreProcessor: $teal;
+$HL-StringPreProc: $maroon;
+$HL-BlockComment: $overlay2;
+$HL-LineComment: $overlay2;
+$HL-Operator: $sky;
+$HL-Keywords1: $text;
+$HL-Keywords2: $blue;
+$HL-Keywords3: $mauve;
+$HL-Keywords4: $maroon;
+
+// ==============================================================================
+//                                Theme Definition
+// ==============================================================================
+
+pre.hl {
+  color: $HL-Default;
+  background-color: $HL-CanvasBG;
+  border-color: $HL-Border;
+}
+
+.hl {
+  &.num {
+    // Numbers
+    color: $HL-Number;
+  }
+  &.esc {
+    // Escape sequences
+    color: $HL-Escape;
+  }
+  &.ipl {
+    // Interpolation sequences
+    color: $HL-Interpolation;
+  }
+  &.sng {
+    // Strings
+    color: $HL-String;
+  }
+  &.ppc {
+    // Preprocessor directives
+    color: $HL-PreProcessor;
+  }
+  &.pps {
+    // Strings within preprocessor directives
+    color: $HL-StringPreProc;
+  }
+  &.com {
+    // Block comments
+    color: $HL-BlockComment;
+  }
+  &.slc {
+    // Single-line comments
+    color: $HL-LineComment;
+  }
+  &.lin {
+    // Line numbers
+    color: $HL-LineNum;
+  }
+  &.opt {
+    // Operators
+    color: $HL-Operator;
+  }
+  &.kwa {
+    // Keywords group 1
+    color: $HL-Keywords1;
+  }
+  &.kwb {
+    // Keywords group 2
+    color: $HL-Keywords2;
+  }
+  &.kwc {
+    // Keywords group 3
+    color: $HL-Keywords3;
+  }
+  &.kwd {
+    // Keywords group 4
+    color: $HL-Keywords4;
+  }
+}

@@ -1,0 +1,95 @@
+/*!
+     Highlight Theme Catppuccin (public domain)
+     By Catppuccin Org, 2026.
+*/
+
+code {
+  color: var(--ctp-text) !important;
+  background-color: var(--ctp-mantle) !important;
+}
+
+/*****************************************************************
+  These definitions come from highlight: http://www.andre-simon.de
+  - std: standard / no recognition
+  - str: string
+  - num: number
+  - slc: single line comment
+  - com: multiline comment
+  - esc: escape character
+  - ppc: preprocessor
+  - pps: preprocessor string
+  - opt: operator
+  - ipl: interpolation
+  - ws:  whitespace
+  - kwX: keyword group X (X: a..z)
+*****************************************************************/
+
+// Numbers
+.hl.num {
+  color: var(--ctp-peach) !important;
+}
+
+// Escape sequences
+.hl.esc {
+  color: var(--ctp-pink) !important;
+}
+
+// Interpolation sequences
+.hl.ipl {
+  color: var(--ctp-pink) !important;
+}
+
+// Strings
+.hl.sng {
+  color: var(--ctp-green) !important;
+}
+
+// Preprocessor directives
+.hl.ppc {
+  color: var(--ctp-teal) !important;
+}
+
+// Strings within preprocessor directives
+.hl.pps {
+  color: var(--ctp-maroon) !important;
+}
+
+// Block comments
+.hl.com {
+  color: var(--ctp-overlay2) !important;
+}
+
+// Single-line comments
+.hl.slc {
+  color: var(--ctp-overlay2) !important;
+}
+
+// Line numbers
+.hl.lin {
+  color: var(--ctp-overlay1) !important;
+}
+
+// Operators
+.hl.opt {
+  color: var(--ctp-sky) !important;
+}
+
+// Keyword Group a - Keys
+.hl.kwa {
+  color: var(--ctp-text) !important;
+}
+
+// Keyword Group b - Parameters
+.hl.kwb {
+  color: var(--ctp-blue) !important;
+}
+
+// Keyword Group c - Commands
+.hl.kwc {
+  color: var(--ctp-mauve) !important;
+}
+
+// Keyword Group d - Symbols
+.hl.kwd {
+  color: var(--ctp-maroon) !important;
+}
